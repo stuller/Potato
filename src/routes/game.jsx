@@ -3,6 +3,9 @@ import Stats from "../components/Stats";
 import Dice from "react-dice-roll";
 import Narrative from '../components/Narrative';
 
+
+//TODO add readme and gitignore
+
 export default function Game() {
     const [destiny, setDestiny] = React.useState(0);
     const [potatoes, setPotatoes] = React.useState(0);
