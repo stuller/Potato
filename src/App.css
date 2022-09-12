@@ -1,10 +1,5 @@
 
-@font-face {
-  font-family: 'Ringbearer Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Ringbearer Medium'), url('RINGM___.woff') format('woff');
-  }
+
 
 #root {
   height: 100vh;
@@ -33,9 +28,11 @@
   animation: fadeIn 15s;
 }
 
-
+#start {
+  z-index: 100;
+}
 #hobbitHouse {
-  width: 80%;
+  height: 40%;
   z-index: 10;
   position: absolute;
   left: 10%;
