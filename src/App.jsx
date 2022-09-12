@@ -2,20 +2,20 @@ import './App.css'
 import hobbitHouseUrl from './assets/hobbitHouse.png'
 import potatoPlantUrl from './assets/potatoPlant.png'
 import Start from './components/Start'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {HashRouter, Route, Routes} from 'react-router-dom'
 import Game from './routes/game'
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Potato</h1>
-      <BrowserRouter>
+      <h1>Potato!</h1>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Start />} />
           <Route path="game" element={<Game />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <div>
       </div>
       <img id="hobbitHouse" src={hobbitHouseUrl}/>
