@@ -4,7 +4,10 @@ import webfontsPlugin from 'vite-plugin-webfonts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  
+  base: '/Potato/',
+  build: {
+    outDir: 'docs',
+  },
   plugins: [
     react(),
     webfontsPlugin({
@@ -32,9 +35,5 @@ export default defineConfig({
       // than CSS files.
       emitCss: false,
     })
-  ],
-  build: {
-    outDir: 'docs',
-    base: '/Potato/',
-  }
+  ]
 })
